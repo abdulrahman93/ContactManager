@@ -35,7 +35,7 @@ void Trie::addContact(string Name , Node<Contact>* cu ){
         }
         if ( i == SZ(S) - 1 ) ;
            current->setContact(cu) ;
-            // el-mafroud a7oot hna el-cu 2li m3aya dh bs el-moshkela f operator = 2li f Contact :S
+        
 
     }
 }
@@ -54,7 +54,7 @@ void Trie::searchForKey(string S){
         current = tmp ;
     }
 }
-    // kda hwa wa2f 3 a5er node f el-key :S
+    
 void Trie::printContacts(TNode* ptr){
 
     vector<TNode*> chil = ptr->GetChildren() ;
@@ -62,7 +62,7 @@ void Trie::printContacts(TNode* ptr){
     {
         printContacts( chil[i] ) ;
     }
-    // el-mafroud a-print el-contact hna 3 asas ano mloush childern tani + an el-node de shayl el-contact bta3 el-key de :S
+    
 }
 //////////////////////////////////////////////
 string ConvertIntoNums(string &S){
